@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Шахматный турнир</title>
+</head>
+<body>
+<div class="container-fluid bg-primary bg-gradient text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 py-4">
+                <h1 class="display-1">Шахматный турнир</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <ul class="nav mb-4">
+                <li class="nav-item h5">
+                    <a class="nav-link link-primary" href="index.html">Турнирная таблица</a>
+                </li>
+                <li class="nav-item h5">
+                    <a class="nav-link link-secondary" href="players.html">Участники</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-9">
+            <table class="table table-bordered" style="table-layout: fixed;">
+                <col class="w-25">
+                <tr class="text-center">
+                    <td class="text-start">Участники</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>Очки</td>
+                    <td>Место</td>
+                </tr>
+                <tr class="text-center">
+                    <td class="text-start">1. Ян-Кшиштоф Дуда</td>
+                    <td class="table-primary"></td>
+                    <td><small>0,5 / 0</small></td>
+                    <td></td>
+                    <td><small>0,5 /</small></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td></td>
+                </tr>
+                <tr class="text-center">
+                    <td class="text-start">2. Дин Лижэнь</td>
+                    <td><small>0,5 / 1</small></td>
+                    <td class="table-primary"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1,5</td>
+                    <td></td>
+                </tr>
+                <tr class="text-center">
+                    <td class="text-start">3. Фабиано Каруана</td>
+                    <td></td>
+                    <td></td>
+                    <td class="table-primary"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><small>0,5 / 0,5</small></td>
+                    <td>1</td>
+                    <td></td>
+                </tr>
+                <tr class="text-center">
+                    <td class="text-start">4. Теймур Раджабов</td>
+                    <td><small>0,5 /</small></td>
+                    <td></td>
+                    <td></td>
+                    <td class="table-primary"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0,5</td>
+                    <td></td>
+                </tr>
+                <tr class="text-center">
+                    <td class="text-start">5. Алиреза Фирузджа</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="table-primary"></td>
+                    <td></td>
+                    <td><small>0 / 0</small></td>
+                    <td></td>
+                    <td>0</td>
+                    <td></td>
+                </tr>
+                <tr class="text-center">
+                    <td class="text-start">6. Хикару Накамура</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="table-primary"></td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                    <td></td>
+                </tr>
+                <tr class="text-center">
+                    <td class="text-start">7. Ян Непомнящий</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><small>1 / 1</small></td>
+                    <td></td>
+                    <td class="table-primary"></td>
+                    <td></td>
+                    <td>2</td>
+                    <td></td>
+                </tr>
+                <tr class="text-center">
+                    <td class="text-start">8. Рихард Раппорт</td>
+                    <td></td>
+                    <td></td>
+                    <td><small>0,5 / 0,5</small></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="table-primary"></td>
+                    <td>1</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Добавить партию</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Белые</label>
+                            <select class="form-select" name="">
+                                <option selected></option>
+                                <option value="">Ян-Кшиштоф Дуда</option>
+                                <option value="">Дин Лижэнь</option>
+                                <option value="">Фабиано Каруана</option>
+                                <option value="">Теймур Раджабов</option>
+                                <option value="">Алиреза Фирузджа</option>
+                                <option value="">Хикару Накамура</option>
+                                <option value="">Ян Непомнящий</option>
+                                <option value="">Рихард Раппорт</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Черные</label>
+                            <select class="form-select" name="">
+                                <option selected></option>
+                                <option value="">Ян-Кшиштоф Дуда</option>
+                                <option value="">Дин Лижэнь</option>
+                                <option value="">Фабиано Каруана</option>
+                                <option value="">Теймур Раджабов</option>
+                                <option value="">Алиреза Фирузджа</option>
+                                <option value="">Хикару Накамура</option>
+                                <option value="">Ян Непомнящий</option>
+                                <option value="">Рихард Раппорт</option>
+                            </select>
+                        </div>
+                        <h6 class="card-subtitle mb-2 text-muted">Выиграли</h6>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="result" id="resultWhite">
+                                <label class="form-check-label" for="resultWhite">
+                                    Белые
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="result" id="resultBlack">
+                                <label class="form-check-label" for="resultBlack">
+                                    Черные
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="result" id="resultDraw">
+                                <label class="form-check-label" for="resultDraw">
+                                    Ничья
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">
+                            Сохранить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Шахматный турнир</title>
+</head>
+<body>
+<div class="container-fluid bg-primary bg-gradient text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 py-4">
+                <h1 class="display-1">Шахматный турнир</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <ul class="nav mb-4">
+                <li class="nav-item h5">
+                    <a class="nav-link link-secondary" href="index.php">Турнирная таблица</a>
+                </li>
+                <li class="nav-item h5">
+                    <a class="nav-link link-primary" href="players.php">Участники</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <form class="row" action="handler/add_player.php" method="POST">
+                <div class="col-4">
+                    <label class="form-label">Имя</label>
+                    <input type="text" class="form-control" name="name">
+                </div>
+                <div class="col-4">
+                    <label class="form-label">Фамилия</label>
+                    <input type="text" class="form-control" name="lastname">
+                </div>
+                <input type="hidden" name="backurl" value="<?php echo $_SERVER['REQUEST_URI']; ?>">
+                <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
+                <div class="col-4 d-inline-flex align-items-end">
+                    <button class="btn btn-primary" type="submit">
+                        Сохранить
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
